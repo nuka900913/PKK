@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47BEEFE1-C718-4214-ABEA-6F33C77A2CF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Warehouse</RootNamespace>
+    <AssemblyName>Warehouse</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Muham\Documents\Penting Kelas 11\Basis Data\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://localhost:8080/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>159B3B8051214EC2E5C09232E22E69DA032FFD32</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Warehouse_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt-Net-Next, Version=4.2.0.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.2.0\lib\net472\BCrypt-Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.105.1.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.105.1\lib\netstandard2.0\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML.Parser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d5f7376574c51ec, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.Parser.2.0.0\lib\netstandard2.0\ClosedXML.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=3.1.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.3.1.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml.Framework, Version=3.1.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.Framework.3.1.1\lib\net46\DocumentFormat.OpenXml.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="RBush, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c77e27b81f4d0187, processorArchitecture=MSIL">
+      <HintPath>..\packages\RBush.Signed.4.0.0\lib\net47\RBush.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>..\packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.9.1\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboardA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboardA.Designer.cs">
+      <DependentUpon>FormDashboardA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboardM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboardM.Designer.cs">
+      <DependentUpon>FormDashboardM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboardS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboardS.Designer.cs">
+      <DependentUpon>FormDashboardS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataBarangA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataBarangA.Designer.cs">
+      <DependentUpon>FormDataBarangA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataBarangM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataBarangM.Designer.cs">
+      <DependentUpon>FormDataBarangM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIn_OutboundA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIn_OutboundA.Designer.cs">
+      <DependentUpon>FormIn_OutboundA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategoriBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategoriBarang.Designer.cs">
+      <DependentUpon>FormKategoriBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKelolaUserA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKelolaUserA.Designer.cs">
+      <DependentUpon>FormKelolaUserA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporanA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanA.Designer.cs">
+      <DependentUpon>FormLaporanA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporanM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanM.Designer.cs">
+      <DependentUpon>FormLaporanM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStockBarangA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStockBarangA.Designer.cs">
+      <DependentUpon>FormStockBarangA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStokS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStokS.Designer.cs">
+      <DependentUpon>FormStokS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplierA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplierA.Designer.cs">
+      <DependentUpon>FormSupplierA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplierS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplierS.Designer.cs">
+      <DependentUpon>FormSupplierS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Koneksi.cs" />
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboardA.resx">
+      <DependentUpon>FormDashboardA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboardM.resx">
+      <DependentUpon>FormDashboardM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboardS.resx">
+      <DependentUpon>FormDashboardS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataBarangA.resx">
+      <DependentUpon>FormDataBarangA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataBarangM.resx">
+      <DependentUpon>FormDataBarangM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIn_OutboundA.resx">
+      <DependentUpon>FormIn_OutboundA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategoriBarang.resx">
+      <DependentUpon>FormKategoriBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKelolaUserA.resx">
+      <DependentUpon>FormKelolaUserA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanA.resx">
+      <DependentUpon>FormLaporanA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanM.resx">
+      <DependentUpon>FormLaporanM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStockBarangA.resx">
+      <DependentUpon>FormStockBarangA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStokS.resx">
+      <DependentUpon>FormStokS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplierA.resx">
+      <DependentUpon>FormSupplierA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplierS.resx">
+      <DependentUpon>FormSupplierS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Warehouse_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GudangGue-transparan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
